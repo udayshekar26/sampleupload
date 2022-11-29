@@ -1,0 +1,15 @@
+curl -s -x PUT http://admin:admin@127.0.0.1:5984/all_dbs
+
+curl -s -x GET http://admin:admin@127.0.0.1:5984/all_dbs
+
+SET SERVER=http://admin:admin@127.0.0.1:5984
+
+ECHO %SERVER%
+
+CURL -X GET %SERVER%/_all_dbs
+
+curl -X GET %server%/faculty/_design/view1/view/view1
+
+curl -X GET %server%/faculty/_uuids
+
+curl -X PUT %server%/faculty/__id__ -d"{\"name\":\"uday\"}"
